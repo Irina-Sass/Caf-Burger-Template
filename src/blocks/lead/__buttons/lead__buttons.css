@@ -1,0 +1,14 @@
+.lead__buttons {
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .lead__buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

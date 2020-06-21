@@ -1,0 +1,35 @@
+@import url(_position_right/private-events__inner-image_position_right.css);
+
+.private-events__inner-image {
+  width: 395px;
+}
+
+@media (max-width: 1374px) {
+  .private-events__inner-image {
+    width: 340px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .private-events__inner-image {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .private-events__inner-image {
+    width: 395px;
+  }
+}
+
+@media (max-width: 575px) {
+  .private-events__inner-image {
+    width: 290px;
+  }
+}
+
+@media (max-width: 425px) {
+  .private-events__inner-image {
+    width: 220px;
+  }
+}

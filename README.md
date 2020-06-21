@@ -1,14 +1,18 @@
-# Caf-Burger-Template
+# Cafe Burger House
 
 https://irina-sass.github.io/Cafe-Burger-Template/
 
 ## Версия проекта
 
-v0.0.1
+v0.1.0
 
 ## Описание проекта
 
-Шаблон проекта
+Одностраничный сайт (landing page) бургерной - Burger House. Сайт адаптирован для различных разрешений экранов.
+
+## Стек используемых технологий
+
+HTML5, CSS3, JavaScript, Git, Webpack
 
 ## Как развернуть проект
 

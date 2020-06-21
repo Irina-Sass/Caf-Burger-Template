@@ -1,0 +1,20 @@
+.contacts__input {
+  width: calc((100%-20px) / 3);
+  margin-right: 10px;
+  display: block;
+}
+
+.contacts__input:last-of-type {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .contacts__input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .contacts__input:last-of-type {
+    margin-bottom: 0px;
+  }
+}

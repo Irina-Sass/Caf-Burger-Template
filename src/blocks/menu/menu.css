@@ -1,0 +1,18 @@
+@import url(__menu-row/menu__menu-row.css);
+@import url(__content/menu__content.css);
+@import url(__column/menu__column.css);
+@import url(__item-ingredients/menu__item-ingredients.css);
+@import url(__item-text/menu__item-text.css);
+@import url(__line/menu__line.css);
+
+.menu {
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+
+@media (max-width: 1023px) {
+  .menu {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+}

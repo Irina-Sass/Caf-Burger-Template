@@ -1,0 +1,31 @@
+@import url(__item/menu-row__item.css);
+
+.menu-row {
+  font-family: 'Open Sans', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 42%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1070px) {
+  .menu-row {
+    flex-direction: column;
+    padding-top: 25px;
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    padding-left: 80px;
+    border-bottom: none;
+  }
+
+  .nav__toggle:checked ~ .menu-row {
+    display: block;
+  }
+}

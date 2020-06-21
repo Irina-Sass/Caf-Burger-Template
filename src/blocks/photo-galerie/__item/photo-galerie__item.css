@@ -1,0 +1,12 @@
+.photo-galerie__item {
+  width: 25%;
+  padding-top: 25%;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .photo-galerie__item {
+    width: 50%;
+    padding-top: 50%;
+  }
+}

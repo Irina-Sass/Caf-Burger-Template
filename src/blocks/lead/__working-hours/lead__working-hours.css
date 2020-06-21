@@ -1,0 +1,14 @@
+.lead__working-hours {
+  transform: rotate(270deg) translateX(-50%);
+  transform-origin: left top;
+  margin: 0;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 575px) {
+  .lead__working-hours {
+    top: 50%;
+    display: none;
+  }
+}

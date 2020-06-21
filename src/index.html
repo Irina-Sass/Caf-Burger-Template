@@ -3,11 +3,1497 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Webpack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Бургерная">
+    <meta name="author" content="Ирина Сасс">
+    <title>Burger House</title>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>" </head>
 
 <body>
-    <h1>Hello</h1>
+    <div class="page">
+        <div class="content">
+            <header class="header section header__section">
+                <nav class="nav">
+                    <ul class="menu-row">
+                        <li class="menu-row__item"><a href="./index.html" target="_self"
+                                class="link header__link">Главная</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#about" target="_self" class="link header__link">О
+                                нас</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#team" target="_self" class="link header__link">Команда</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#booking" target="_self"
+                                class="link header__link">Бронирование</a>
+                        </li>
+                    </ul>
+                    <img src="<%=require('./images/logo.png').default%>" alt="Логотип" class="header__logo">
+                    <ul class="menu-row">
+                        <li class="menu-row__item"><a href="#menu" target="_self" class="link header__link">Меню</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#galerie" target="_self"
+                                class="link header__link">Галерея</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#events" target="_self"
+                                class="link header__link">События</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#contacts" target="_self"
+                                class="link header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-mobile">
+                    <img src="<%=require('./images/logo.png').default%>" alt="Логотип" class="header__logo">
+                    <input type="checkbox" id="toggle" class="nav__toggle">
+                    <label for="toggle" class="nav__button"><span class="nav__button-icon"></span></label>
+                    <ul class="menu-row">
+                        <li class="menu-row__item"><a href="./index.html" target="_self"
+                                class="link header__link">Главная</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#about" target="_self" class="link header__link">О
+                                нас</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#team" target="_self" class="link header__link">Команда</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#booking" target="_self"
+                                class="link header__link">Бронирование</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#menu" target="_self" class="link header__link">Меню</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#galerie" target="_self"
+                                class="link header__link">Галерея</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#events" target="_self"
+                                class="link header__link">События</a>
+                        </li>
+                        <li class="menu-row__item"><a href="#contacts" target="_self"
+                                class="link header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <section class="lead section section-background">
+                    <div class="lead__wrapper">
+                        <p class="lead__working-hours lead__text">Пн-Пт: 8.00-22.00, Сб-Вс: 8.00-3.00</p>
+                        <div class="lead__content">
+                            <p class="section-title lead__section-title">ресторан</p>
+                            <h1 class="title title_size_big lead__title">Burger House</h1>
+                            <div class="lead__buttons">
+                                <a href="#booking"
+                                    class="button button_theme_sun link lead__text button_margin_bottom">Забронировать
+                                    столик</a>
+                                <a href="#menu" class="button button_theme_transparent link lead__text">Меню</a>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <a href="https://ru-ru.facebook.com/" target="_blank"
+                                class="social__icon social__icon_facebook link"></a>
+                            <a href="https://twitter.com/explore" target="_blank"
+                                class="social__icon social__icon_twitter link"></a>
+                            <a href="https://www.instagram.com/?hl=ru" target="_blank"
+                                class="social__icon social__icon_instagram link"></a>
+                        </div>
+                    </div>
+
+                    <a href="#about" class="lead__button-down link"></a>
+                </section>
+                <section class="about section" id="about">
+                    <div class="section__content">
+                        <h2 class="title title_size_medium">О нас</h2>
+                        <p class="subtitle subtitle_padding-top_small">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Duis at velit
+                            maximus, molestie est a, tempor magna.</p>
+                        <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+                            non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                            sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                            facilisis semper laoreet.</p>
+                    </div>
+                    <div class="section-image section-image_position_right about__image"></div>
+                </section>
+                <section class="team section section-background" id="team">
+                    <p class="section-title">Наша команда</p>
+                    <div class="section-wrapper">
+                        <div class="section-image team__image section-image_position_left"></div>
+                        <div class="section__content">
+                            <h2 class="title title_size_medium">Шеф-повар</h2>
+                            <p class="subtitle subtitle_padding-top_small">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Duis at velit
+                                maximus, molestie est a, tempor magna.</p>
+                            <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                                Morbi
+                                non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                facilisis semper laoreet.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="booking section" id="booking">
+                    <div class="section__content booking__section-content">
+                        <h2 class="title title_size_medium">Забронировать столик</h2>
+                        <form action="" class="booking__form">
+                            <!-- <fieldset class="form-fieldset"> -->
+                            <div class="booking__form-inputs">
+                                <input type="text" class="form-input booking__input text" placeholder="Имя">
+                                <input type="email" class="form-input booking__input text" placeholder="Email">
+                                <input type="tel" class="form-input booking__input text" placeholder="Телефон">
+                                <div class="booking__wrapper-input">
+                                    <input type="text" list="people"
+                                        class="form-input booking__input booking__input-people text"
+                                        placeholder="Количество человек">
+                                </div>
+                                <datalist id="people">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="2">
+                                    <option value="4">
+                                </datalist>
+                                <input type="text" class="form-input booking__input text" placeholder="Дата"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')">
+                                <input type="text" class="form-input booking__input text" placeholder="Время"
+                                    onfocus="(this.type='time')" onblur="(this.type='text')">
+
+                            </div>
+                            <!-- </fieldset> -->
+                            <button type="submit"
+                                class="button button_theme_sun booking__form-button text">Забронировать</button>
+                            <p class="text booking__text">Пн-Пт: 8.00-22.00, Сб-Вс: 8.00-3.00, Телефон: +7 333 3333 3333
+                            </p>
+                        </form>
+                    </div>
+                    <div class="section-image booking__image section-image_position_right"></div>
+
+                </section>
+                <section class="specialties section section-background">
+                    <p class="section-title">Фирменные блюда</p>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="section-wrapper swiper-slide">
+                                <div class="section-image section-image_position_left">
+                                    <img src="<%=require('./images/specialties1.jpg').default%>" alt=""
+                                        class="section-inner-image">
+                                </div>
+                                <div class="section__content">
+                                    <h2 class="title title_size_medium">Lorem ipsum</h2>
+                                    <p class="subtitle subtitle_padding-top_small">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Duis at
+                                        velit
+                                        maximus, molestie est a, tempor magna.</p>
+                                    <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                                        posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat,
+                                        dui odio vehicula
+                                        eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                        pharetra. Nulla
+                                        facilisis semper laoreet.</p>
+                                </div>
+                            </div>
+                            <div class="section-wrapper swiper-slide">
+                                <div class="section-image section-image_position_left">
+                                    <img src="<%=require('./images/specialties2.jpg').default%>" alt=""
+                                        class="section-inner-image">
+                                </div>
+                                <div class="section__content">
+                                    <h2 class="title title_size_medium">Lorem ipsum</h2>
+                                    <p class="subtitle subtitle_padding-top_small">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Duis at
+                                        velit
+                                        maximus, molestie est a, tempor magna.</p>
+                                    <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                                        posuere.
+                                        Morbi
+                                        non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula
+                                        eros, a
+                                        sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                        pharetra. Nulla
+                                        facilisis semper laoreet.</p>
+                                </div>
+                            </div>
+                            <div class="section-wrapper swiper-slide">
+                                <div class="section-image section-image_position_left">
+                                    <img src="<%=require('./images/specialties3.jpg').default%>" alt=""
+                                        class="section-inner-image">
+                                </div>
+                                <div class="section__content">
+                                    <h2 class="title title_size_medium">Lorem ipsum</h2>
+                                    <p class="subtitle subtitle_padding-top_small">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Duis at
+                                        velit
+                                        maximus, molestie est a, tempor magna.</p>
+                                    <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                                        posuere.
+                                        Morbi
+                                        non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula
+                                        eros, a
+                                        sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                        pharetra. Nulla
+                                        facilisis semper laoreet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </section>
+                <section class="menu section" id="menu">
+                    <h2 class="title title_size_medium">Вкусное меню</h2>
+                    <p class="subtitle subtitle_padding-top_big">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Duis at
+                        velit
+                        maximus, molestie est a, tempor magna.</p>
+                    <div class="swiper-container-menu">
+                        <div class="swiper-pagination-menu"></div>
+                        <div class="swiper-wrapper">
+                            <div class="menu__content swiper-slide" data-name="Бургеры">
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
+                                            <p class="menu__item-text">55,68 USD</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
+                                        </p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__content swiper-slide" data-name="Снэки">
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
+                                            <p class="menu__item-text">55,68 USD</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
+                                        </p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__content swiper-slide" data-name="Салаты">
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
+                                            <p class="menu__item-text">55,68 USD</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
+                                        </p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__content swiper-slide" data-name="Бургеры">
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
+                                            <p class="menu__item-text">55,68 USD</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
+                                        </p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__content swiper-slide" data-name="Десерты">
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
+                                            <p class="menu__item-text">55,68 USD</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
+                                        </p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__content swiper-slide" data-name="Напитки">
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
+                                            <p class="menu__item-text">55,68 USD</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
+                                        </p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                                <div class="menu__column">
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                    <div class="menu__item">
+                                        <div class="menu__line">
+                                            <p class="menu__item-text">Lorem ipsum</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
+                                        </div>
+                                        <p class="menu__item-ingredients">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="private-events section section-background" id="events">
+                    <p class="section-title">Частные мероприятия</p>
+                    <div class="section-wrapper">
+                        <div class="section-image section-image_position_left private-events__image">
+                            <img src="<%=require('./images/birthday.jpg').default%>" alt="Дни рождения"
+                                class="section-inner-image private-events__inner-image">
+                            <p class="private-events__event private-events__event_position_left">Дни рождения</p>
+                        </div>
+                        <div class="private-events__line"></div>
+                        <div class="section-image section-image_position_right private-events__image">
+                            <p class="private-events__event private-events__event_position_right">Корпоративы</p>
+                            <img src="<%=require('./images/corporative.jpg').default%>" alt="Корпоративные мероприятия"
+                                class="section-inner-image private-events__inner-image private-events__inner-image_position_right">
+                        </div>
+                    </div>
+                    <p class="text private-events__contacts">Для проведения частных мероприятий звоните, пожалуйста: +7
+                        333 3333 3333 или воспользуйтесь контактной формой</p>
+                </section>
+                <section class="photo-galerie" id="galerie">
+                    <div class="photo-galerie__item">
+                        <img src="<%=require('./images/photo1.jpg').default%>" alt="" class="photo-galerie__image">
+                    </div>
+                    <div class="photo-galerie__item">
+                        <img src="<%=require('./images/photo2.jpg').default%>" alt="" class="photo-galerie__image">
+                    </div>
+                    <div class="photo-galerie__item">
+                        <img src="<%=require('./images/photo3.jpg').default%>" alt="" class="photo-galerie__image">
+                    </div>
+                    <div class="photo-galerie__item">
+                        <img src="<%=require('./images/photo4.jpg').default%>" alt="" class="photo-galerie__image">
+                    </div>
+                </section>
+                <section class="contacts section" id="contacts">
+                    <h2 class="title title_size_medium">Контакты</h2>
+                    <p class="subtitle subtitle_padding-top_big">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Duis at velit
+                        maximus, molestie est a, tempor magna.</p>
+                    <form action="" class="contacts__form">
+                        <fieldset class="form-fieldset">
+                            <div class="contacts__inputs">
+                                <input type="text" class="contacts__input form-input text" placeholder="Имя">
+                                <input type="email" class="contacts__input form-input text" placeholder="Email">
+                                <input type="tel" class="contacts__input form-input text" placeholder="Телефон">
+                            </div>
+                        </fieldset>
+                        <textarea placeholder="Сообщение" class="form-input contacts__textarea text"></textarea>
+                        <div class="contacts__submit-row">
+                            <div class="contacts__info">
+                                <p class="text contacts__info-item contacts__info-adress">Москва</p>
+                                <p class="text contacts__info-item contacts__info-tel">+7 333 3333 3333</p>
+                                <p class="text contacts__info-item contacts__info-email">office@burgerhouse.com</p>
+                            </div>
+                            <button type="submit" class="contacts__button button button_theme_sun text">Отправить
+                                сообщение</button>
+                        </div>
+
+                    </form>
+                </section>
+                <section class="map">
+                    <iframe class="map__fragment"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a652e3a7cb1d901e80d4c2127a9ab25b4d1b7feb135d139cb7114a5f643577b&amp;source=constructor"
+                        frameborder="0"></iframe>
+                </section>
+            </main>
+            <footer class="footer">
+                <p class="footer__text text">&COPY; Burger House 2020</p>
+            </footer>
+        </div>
+
+    </div>
+
     <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
 </body>
 

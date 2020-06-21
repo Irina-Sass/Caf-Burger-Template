@@ -1,0 +1,19 @@
+.lead__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 225px;
+  position: relative;
+}
+
+@media (max-width: 1070px) {
+  .lead__wrapper {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .lead__wrapper {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,10 @@
+.contacts__submit-row {
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 575px) {
+  .contacts__submit-row {
+    flex-direction: column;
+  }
+}

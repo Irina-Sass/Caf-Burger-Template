@@ -1,0 +1,6 @@
+.private-events__image {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  box-shadow: none;
+}

@@ -1,0 +1,12 @@
+.swiper-pagination-menu {
+  color: #333;
+  font-family: 'Open Sans', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transition: opacity 0.3s;
+  transform: translateZ(0);
+  padding-bottom: 55px;
+  width: 100%;
+}

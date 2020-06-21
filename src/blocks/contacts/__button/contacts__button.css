@@ -1,0 +1,17 @@
+.contacts__button {
+  width: 50%;
+  border: none;
+  padding: 0;
+}
+
+.contacts__button:focus {
+  outline: none;
+}
+
+@media (max-width: 575px) {
+  .contacts__button {
+    width: 100%;
+    order: -1;
+    margin-bottom: 10px;
+  }
+}

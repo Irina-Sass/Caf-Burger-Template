@@ -1,0 +1,15 @@
+.private-events__line {
+  background-color: #fff;
+  opacity: 0.2;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+@media (max-width: 1023px) {
+  .private-events__line {
+    display: none;
+    transform: rotate(90deg);
+  }
+}

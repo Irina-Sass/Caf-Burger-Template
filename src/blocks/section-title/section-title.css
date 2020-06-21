@@ -1,0 +1,13 @@
+.section-title {
+  font-family: 'Open Sans', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+  font-weight: bold;
+  height: 100px;
+  font-size: 12px;
+  line-height: 100px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
