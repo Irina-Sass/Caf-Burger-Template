@@ -1,0 +1,49 @@
+@import url(_position_left/private-events__event_position_left.css);
+@import url(_position_right/private-events__event_position_right.css);
+
+.private-events__event {
+  width: 100%;
+  height: 80px;
+  font-family: El Messiri, Arial, Helvetica, Nimbus Sans L, sans-serif;
+  font-size: 24px;
+  line-height: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0;
+}
+
+@media (max-width: 1374px) {
+  .private-events__event {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .private-events__event {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .private-events__event {
+    font-size: 20px;
+    height: 80px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .private-events__event {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .private-events__event {
+    font-size: 18px;
+  }
+}

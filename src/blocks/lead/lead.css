@@ -1,0 +1,22 @@
+@import url(__wrapper/lead__wrapper.css);
+@import url(__working-hours/lead__working-hours.css);
+@import url(__content/lead__content.css);
+@import url(__title/lead__title.css);
+@import url(__buttons/lead__buttons.css);
+@import url(__button-down/lead__button-down.css);
+@import url(__text/lead__text.css);
+@import url(__section-title/lead__section-title.css);
+
+.lead {
+  background-image: url(../../images/lead.jpg);
+  margin-top: -100px;
+  padding-top: 100px;
+  padding-bottom: 92px;
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .lead {
+    padding-bottom: 40px;
+  }
+}

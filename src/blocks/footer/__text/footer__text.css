@@ -1,0 +1,14 @@
+.footer__text {
+  height: 100px;
+  line-height: 100px;
+  color: #878787;
+  text-align: center;
+  max-width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .footer__text {
+    height: 80px;
+    line-height: 80px;
+  }
+}

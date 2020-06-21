@@ -1,0 +1,10 @@
+@import url(__image/private-events__image.css);
+@import url(__inner-image/private-events__inner-image.css);
+@import url(__event/private-events__event.css);
+@import url(__contacts/private-events__contacts.css);
+@import url(__line/private-events__line.css);
+
+.private-events {
+  color: #fff;
+  background-image: url(../../images/private-events.jpg);
+}

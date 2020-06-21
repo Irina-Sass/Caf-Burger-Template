@@ -1,0 +1,35 @@
+.booking__wrapper-input {
+  position: relative;
+}
+
+.booking__wrapper-input::after,
+.booking__wrapper-input::before {
+  position: absolute;
+  pointer-events: none;
+}
+.booking__wrapper-input::after {
+  content: '';
+  background-color: #e5e5e5;
+  top: 1px;
+  right: 1px;
+  width: 40px;
+  height: calc(100%-2px);
+  transition: 0.3s;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.booking__wrapper-input::before {
+  content: '\f107';
+  font-family: 'Font Awesome';
+  font-weight: 900;
+  right: 0;
+  width: 40px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+  z-index: 1;
+  font-size: 20px;
+  cursor: pointer;
+}

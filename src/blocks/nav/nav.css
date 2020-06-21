@@ -1,0 +1,15 @@
+@import url(__toggle/nav__toggle.css);
+@import url(__button/nav__button.css);
+@import url(__button-icon/nav__button-icon.css);
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media (max-width: 1070px) {
+  .nav {
+    display: none;
+  }
+}

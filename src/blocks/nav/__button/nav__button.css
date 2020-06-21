@@ -1,0 +1,27 @@
+.nav__button {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 80px;
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  .nav__button {
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav__button {
+    right: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav__button {
+    right: 16px;
+  }
+}

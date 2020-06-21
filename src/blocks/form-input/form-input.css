@@ -1,0 +1,19 @@
+.form-input {
+  height: 60px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  border: none;
+  box-sizing: border-box;
+  text-align: start;
+  color: #404040;
+}
+
+.form-input::placeholder {
+  color: #878787;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+.form-input:focus {
+  outline-color: #e8c300;
+}

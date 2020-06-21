@@ -1,0 +1,12 @@
+@import url(_padding-top_big/subtitle_padding-top_big.css);
+@import url(_padding-top_small/subtitle_padding-top_small.css);
+
+.subtitle {
+  font-family: 'Open Sans', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 20px;
+}

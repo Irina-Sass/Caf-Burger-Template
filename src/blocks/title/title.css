@@ -1,0 +1,20 @@
+@import url(_size_big/title_size_big.css);
+@import url(_size_medium/title_size_medium.css);
+
+.title {
+  font-family: 'El Messiri', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #e8c300;
+  margin: 10px auto 0;
+}

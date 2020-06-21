@@ -1,0 +1,16 @@
+.contacts__info-item {
+  padding-left: 20px;
+  padding-right: 15px;
+  position: relative;
+
+  color: #878787;
+}
+
+.contacts__info-item::before {
+  font-family: Font Awesome;
+  color: #e8c300;
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  align-self: start;
+}
