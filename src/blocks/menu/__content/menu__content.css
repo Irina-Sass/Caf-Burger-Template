@@ -1,0 +1,8 @@
+.menu__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #333;
+  box-sizing: border-box;
+}

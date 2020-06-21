@@ -1,0 +1,9 @@
+.menu__column {
+  width: 360px;
+}
+
+@media (max-width: 900px) {
+  .menu__column {
+    width: 100%;
+  }
+}

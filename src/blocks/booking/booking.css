@@ -1,0 +1,24 @@
+@import url(__form/booking__form.css);
+@import url(__form-inputs/booking__form-inputs.css);
+@import url(__image/booking__image.css);
+@import url(__form-button/booking__form-button.css);
+@import url(__text/booking__text.css);
+@import url(__wrapper-input/booking__wrapper-input.css);
+@import url(__input-people/booking__input-people.css);
+@import url(__section-content/booking__section-content.css);
+
+.booking {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .booking {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

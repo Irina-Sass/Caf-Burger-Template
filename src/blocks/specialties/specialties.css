@@ -1,0 +1,11 @@
+.specialties {
+  color: #fff;
+  background-image: url(../../images/specialties_background.jpg);
+  padding-bottom: 35px;
+}
+
+@media (max-width: 1023px) {
+  .specialties {
+    padding-bottom: 20px;
+  }
+}

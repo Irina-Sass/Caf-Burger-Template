@@ -1,0 +1,8 @@
+@import url(__item/photo-galerie__item.css);
+@import url(__image/photo-galerie__image.css);
+
+.photo-galerie {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

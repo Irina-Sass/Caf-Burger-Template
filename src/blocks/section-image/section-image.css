@@ -1,0 +1,80 @@
+@import url(_position_left/section-image_position_left.css);
+@import url(_position_right/section-image_position_right.css);
+
+.section-image {
+  width: 475px;
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: relative;
+}
+
+.section-image::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #e8c300;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+@media (max-width: 1374px) {
+  .section-image {
+    width: 400px;
+    height: 400px;
+  }
+  .section-image::after {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .section-image {
+    width: 300px;
+    height: 300px;
+  }
+  .section-image::after {
+    width: 150px;
+    height: 150px;
+    border-width: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section-image {
+    width: 475px;
+    height: 475px;
+  }
+  .section-image::after {
+    width: 250px;
+    height: 250px;
+    border-width: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-image::after {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-image {
+    width: 280px;
+    height: 280px;
+  }
+}

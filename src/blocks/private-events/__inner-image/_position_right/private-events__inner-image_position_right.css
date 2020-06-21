@@ -1,0 +1,21 @@
+.private-events__inner-image_position_right {
+  margin-left: 80px;
+}
+
+@media (max-width: 1374px) {
+  .private-events__inner-image_position_right {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .private-events__inner-image_position_right {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .private-events__inner-image_position_right {
+    margin-left: 60px;
+  }
+}

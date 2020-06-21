@@ -1,0 +1,35 @@
+.nav__button-icon,
+.nav__button-icon::before,
+.nav__button-icon::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.nav__button-icon::before,
+.nav__button-icon::after {
+  content: '';
+  position: absolute;
+}
+.nav__button-icon::before {
+  top: 12px;
+}
+
+.nav__button-icon::after {
+  bottom: 0px;
+}
+
+.nav__toggle:checked ~ .nav__button > .nav__button-icon {
+  transform: rotate(45deg);
+}
+
+.nav__toggle:checked ~ .nav__button > .nav__button-icon::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.nav__toggle:checked ~ .nav__button > .nav__button-icon::after {
+  top: 0;
+  transform: rotate(90deg);
+}

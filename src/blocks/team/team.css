@@ -1,0 +1,13 @@
+@import url(__image/team__image.css);
+
+.team {
+  padding-bottom: 100px;
+  background-image: url(../../images/team_background.jpg);
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .team {
+    padding-bottom: 60px;
+  }
+}

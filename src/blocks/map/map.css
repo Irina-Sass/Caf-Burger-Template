@@ -1,0 +1,12 @@
+@import url(__fragment/map__fragment.css);
+
+.map {
+  width: 100%;
+  height: 475px;
+}
+
+@media (max-width: 1023px) {
+  .map {
+    height: 337px;
+  }
+}

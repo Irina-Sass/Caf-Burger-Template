@@ -1,0 +1,13 @@
+.contacts__info {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+  .contacts__info {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+@import url(_theme_sun/button_theme_sun.css);
+@import url(_theme_transparent/button_theme_transparent.css);
+@import url(_margin_bottom/button_margin_bottom.css);
+
+.button {
+  display: block;
+  width: 215px;
+  height: 60px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 60px;
+}
