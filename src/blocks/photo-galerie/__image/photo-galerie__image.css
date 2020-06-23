@@ -5,11 +5,4 @@
   bottom: 0;
   left: 0;
   object-fit: cover;
-  transition: width, height 0.5s;
-}
-
-.photo-galerie__image:hover {
-  width: 105%;
-  height: 105%;
-  z-index: 5;
 }
