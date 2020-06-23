@@ -1442,18 +1442,32 @@
                         333 3333 3333 или воспользуйтесь контактной формой</p>
                 </section>
                 <section class="photo-galerie" id="galerie">
-                    <div class="photo-galerie__item">
-                        <img src="<%=require('./images/photo1.jpg').default%>" alt="" class="photo-galerie__image">
-                    </div>
-                    <div class="photo-galerie__item">
-                        <img src="<%=require('./images/photo2.jpg').default%>" alt="" class="photo-galerie__image">
-                    </div>
-                    <div class="photo-galerie__item">
-                        <img src="<%=require('./images/photo3.jpg').default%>" alt="" class="photo-galerie__image">
-                    </div>
-                    <div class="photo-galerie__item">
-                        <img src="<%=require('./images/photo4.jpg').default%>" alt="" class="photo-galerie__image">
-                    </div>
+
+                    <a href="<%=require('./images/photo1.jpg').default%>" class="lightbox photo-galerie__item"
+                        data-group="cafe">
+                        <img src="<%=require('./images/photo1.jpg').default%>" alt="I am a caption"
+                            class="photo-galerie__image">
+                    </a>
+
+                    <a href="<%=require('./images/photo2.jpg').default%>" class="lightbox photo-galerie__item"
+                        data-group="cafe">
+                        <img src="<%=require('./images/photo2.jpg').default%>" alt="I am a caption"
+                            class="photo-galerie__image">
+                    </a>
+
+                    <a href="<%=require('./images/photo3.jpg').default%>" class="lightbox photo-galerie__item"
+                        data-group="cafe">
+                        <img src="<%=require('./images/photo3.jpg').default%>" alt="I am a caption"
+                            class="photo-galerie__image">
+                    </a>
+                    <a href="<%=require('./images/photo4.jpg').default%>" class="lightbox photo-galerie__item"
+                        data-group="cafe">
+                        <img src="<%=require('./images/photo4.jpg').default%>" alt="I am a caption"
+                            class="photo-galerie__image">
+                    </a>
+
+
+
                 </section>
                 <section class="contacts section" id="contacts">
                     <h2 class="title title_size_medium">Контакты</h2>

@@ -1,5 +1,6 @@
 import './style.css';
 import Swiper from 'swiper';
+import Tobii from 'tobii';
 import { Array } from 'core-js';
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -30,4 +31,8 @@ var menuSwiper = new Swiper('.swiper-container-menu', {
     bulletClass: 'swiper-pagination-menu-bullet',
     bulletActiveClass: 'swiper-pagination-menu-bullet-active',
   },
+});
+
+const tobii = new Tobii({
+  captions: false,
 });
