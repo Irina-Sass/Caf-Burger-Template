@@ -10,6 +10,7 @@
 
 @media (max-width: 1070px) {
   .nav {
-    display: none;
+    flex-direction: column;
+    background: #333;
   }
 }

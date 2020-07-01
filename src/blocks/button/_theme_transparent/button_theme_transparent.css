@@ -1,3 +1,7 @@
 .button_theme_transparent {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff80;
+}
+
+.button_theme_transparent:hover {
+  background-color: #ffffff1a;
 }

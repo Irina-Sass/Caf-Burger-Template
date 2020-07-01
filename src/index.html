@@ -14,60 +14,28 @@
         <div class="content">
             <header class="header section header__section">
                 <nav class="nav">
-                    <ul class="menu-row">
-                        <li class="menu-row__item"><a href="./index.html" target="_self"
-                                class="link header__link">Главная</a>
-                        </li>
-                        <li class="menu-row__item"><a href="#about" target="_self" class="link header__link">О
-                                нас</a>
-                        </li>
-                        <li class="menu-row__item"><a href="#team" target="_self" class="link header__link">Команда</a>
-                        </li>
-                        <li class="menu-row__item"><a href="#booking" target="_self"
-                                class="link header__link">Бронирование</a>
-                        </li>
-                    </ul>
-                    <img src="<%=require('./images/logo.png').default%>" alt="Логотип" class="header__logo">
-                    <ul class="menu-row">
-                        <li class="menu-row__item"><a href="#menu" target="_self" class="link header__link">Меню</a>
-                        </li>
-                        <li class="menu-row__item"><a href="#galerie" target="_self"
-                                class="link header__link">Галерея</a>
-                        </li>
-                        <li class="menu-row__item"><a href="#events" target="_self"
-                                class="link header__link">События</a>
-                        </li>
-                        <li class="menu-row__item"><a href="#contacts" target="_self"
-                                class="link header__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="nav-mobile">
-                    <img src="<%=require('./images/logo.png').default%>" alt="Логотип" class="header__logo">
                     <input type="checkbox" id="toggle" class="nav__toggle">
                     <label for="toggle" class="nav__button"><span class="nav__button-icon"></span></label>
                     <ul class="menu-row">
-                        <li class="menu-row__item"><a href="./index.html" target="_self"
-                                class="link header__link">Главная</a>
+                        <li class="menu-row__item"><a href="/" target="_self" class="link">Главная</a>
                         </li>
-                        <li class="menu-row__item"><a href="#about" target="_self" class="link header__link">О
+                        <li class="menu-row__item"><a href="#about" target="_self" class="link">О
                                 нас</a>
                         </li>
-                        <li class="menu-row__item"><a href="#team" target="_self" class="link header__link">Команда</a>
+                        <li class="menu-row__item"><a href="#team" target="_self" class="link">Команда</a>
                         </li>
-                        <li class="menu-row__item"><a href="#booking" target="_self"
-                                class="link header__link">Бронирование</a>
+                        <li class="menu-row__item"><a href="#booking" target="_self" class="link">Бронирование</a>
                         </li>
-                        <li class="menu-row__item"><a href="#menu" target="_self" class="link header__link">Меню</a>
+                    </ul>
+                    <img src="<%=require('./images/logo.png').default%>" alt="Логотип" class="header__logo">
+                    <ul class="menu-row">
+                        <li class="menu-row__item"><a href="#menu" target="_self" class="link">Меню</a>
                         </li>
-                        <li class="menu-row__item"><a href="#galerie" target="_self"
-                                class="link header__link">Галерея</a>
+                        <li class="menu-row__item"><a href="#galerie" target="_self" class="link">Галерея</a>
                         </li>
-                        <li class="menu-row__item"><a href="#events" target="_self"
-                                class="link header__link">События</a>
+                        <li class="menu-row__item"><a href="#events" target="_self" class="link">События</a>
                         </li>
-                        <li class="menu-row__item"><a href="#contacts" target="_self"
-                                class="link header__link">Контакты</a>
+                        <li class="menu-row__item"><a href="#contacts" target="_self" class="link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -131,36 +99,60 @@
                 <section class="booking section" id="booking">
                     <div class="section__content booking__section-content">
                         <h2 class="title title_size_medium">Забронировать столик</h2>
-                        <form action="" class="booking__form">
-                            <!-- <fieldset class="form-fieldset"> -->
+                        <form action="http://httpbin.org/post" class="booking__form form" id="booking-form">
                             <div class="booking__form-inputs">
-                                <input type="text" class="form-input booking__input text" placeholder="Имя">
-                                <input type="email" class="form-input booking__input text" placeholder="Email">
-                                <input type="tel" class="form-input booking__input text" placeholder="Телефон">
-                                <div class="booking__wrapper-input">
-                                    <input type="text" list="people"
-                                        class="form-input booking__input booking__input-people text"
-                                        placeholder="Количество человек">
+                                <input type="text" class="form__input booking__input text" name="name" placeholder="Имя"
+                                    required minlength="2">
+                                <input type="email" class="form__input booking__input text" name="email"
+                                    placeholder="Email" required>
+                                <div class="form__field">
+                                    <input type="tel" class="form__input booking__input form-input-tel text" name="tel"
+                                        placeholder="Телефон" required pattern="(\+7|8)[\s0-9()-]+" minlength="10">
+                                    <span class="form__input-error text">Введите телефон в формате: +7 (900)
+                                        000-00-00</span>
+                                </div>
+                                <div class="booking__wrapper-input form__field">
+                                    <input type="number" list="people"
+                                        class="form__input booking__input booking__input-people text" name="people"
+                                        placeholder="Количество человек" required min="1" max="80">
+                                    <span class="form__input-error text">Количество человек не больше 80</span>
                                 </div>
                                 <datalist id="people">
                                     <option value="1">
                                     <option value="2">
                                     <option value="3">
-                                    <option value="2">
                                     <option value="4">
+                                    <option value="5">
+                                    <option value="6">
+                                    <option value="7">
+                                    <option value="8">
+                                    <option value="9">
+                                    <option value="10">
                                 </datalist>
-                                <input type="text" class="form-input booking__input text" placeholder="Дата"
-                                    onfocus="(this.type='date')" onblur="(this.type='text')">
-                                <input type="text" class="form-input booking__input text" placeholder="Время"
-                                    onfocus="(this.type='time')" onblur="(this.type='text')">
+                                <input type="text" class="form__input booking__input text booking__input-date"
+                                    name="date" placeholder="Дата" onfocus="(this.type='date')" required>
+                                <div class="form__field">
+                                    <input type="text" class="form__input booking__input text booking__input-time"
+                                        name="time" placeholder="Время" onfocus="(this.type='time')" required
+                                        min="08:00" max="22:00">
+                                    <span class="form__input-error text">Вы можете забронировать столик на любое время с
+                                        08.00 до 22.00</span>
+                                </div>
 
                             </div>
-                            <!-- </fieldset> -->
                             <button type="submit"
                                 class="button button_theme_sun booking__form-button text">Забронировать</button>
-                            <p class="text booking__text">Пн-Пт: 8.00-22.00, Сб-Вс: 8.00-3.00, Телефон: +7 333 3333 3333
-                            </p>
                         </form>
+                        <div class="form__message" id="message-booking-form">
+                            <p class="text form__message-text">Ваше обращение отправлено! В ближайщее время мы с
+                                вами
+                                свяжемся!</p>
+                        </div>
+                        <p class="text booking__text">Пн-Пт: 8.00-22.00, Сб-Вс: 8.00-3.00, Телефон: <a
+                                href="tel:+7 333 3333 3333" class="link">+7 333 3333 3333</a>
+                        </p>
+                        <p class="form__error text" id="error-booking-form">Во время отправки данных произошла
+                            ошибка, попробуйте ещё раз!</p>
                     </div>
                     <div class="section-image booking__image section-image_position_right"></div>
 
@@ -248,8 +240,8 @@
                                 <div class="menu__column">
                                     <div class="menu__item">
                                         <div class="menu__line">
-                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
-                                            <p class="menu__item-text">55,68 USD</p>
+                                            <p class="menu__item-text">Бургер</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
                                         </div>
                                         <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
                                         </p>
@@ -444,8 +436,8 @@
                                 <div class="menu__column">
                                     <div class="menu__item">
                                         <div class="menu__line">
-                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
-                                            <p class="menu__item-text">55,68 USD</p>
+                                            <p class="menu__item-text">Снэк</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
                                         </div>
                                         <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
                                         </p>
@@ -640,8 +632,8 @@
                                 <div class="menu__column">
                                     <div class="menu__item">
                                         <div class="menu__line">
-                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
-                                            <p class="menu__item-text">55,68 USD</p>
+                                            <p class="menu__item-text">Салат</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
                                         </div>
                                         <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
                                         </p>
@@ -832,12 +824,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="menu__content swiper-slide" data-name="Бургеры">
+                            <div class="menu__content swiper-slide" data-name="Стейки">
                                 <div class="menu__column">
                                     <div class="menu__item">
                                         <div class="menu__line">
-                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
-                                            <p class="menu__item-text">55,68 USD</p>
+                                            <p class="menu__item-text">Стейк</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
                                         </div>
                                         <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
                                         </p>
@@ -1032,8 +1024,8 @@
                                 <div class="menu__column">
                                     <div class="menu__item">
                                         <div class="menu__line">
-                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
-                                            <p class="menu__item-text">55,68 USD</p>
+                                            <p class="menu__item-text">Десерт</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
                                         </div>
                                         <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
                                         </p>
@@ -1228,8 +1220,8 @@
                                 <div class="menu__column">
                                     <div class="menu__item">
                                         <div class="menu__line">
-                                            <p class="menu__item-text">PIZZA QUATRO STAGIONI</p>
-                                            <p class="menu__item-text">55,68 USD</p>
+                                            <p class="menu__item-text">Лимонад</p>
+                                            <p class="menu__item-text">0.00 руб.</p>
                                         </div>
                                         <p class="menu__item-ingredients">LInteger ullamcorper neque eu purus euismod
                                         </p>
@@ -1438,62 +1430,73 @@
                                 class="section-inner-image private-events__inner-image private-events__inner-image_position_right">
                         </div>
                     </div>
-                    <p class="text private-events__contacts">Для проведения частных мероприятий звоните, пожалуйста: +7
-                        333 3333 3333 или воспользуйтесь контактной формой</p>
+                    <div class="private-events__contacts">
+                        <p class="text">Для проведения частных мероприятий звоните, пожалуйста: <a class="link"
+                                href="tel:+73333333333">+7 333 3333 3333</a> или
+                            воспользуйтесь <a href="#contacts" class="link">контактной формой</a></p>
+                    </div>
+
+
                 </section>
                 <section class="photo-galerie" id="galerie">
-
                     <a href="<%=require('./images/photo1.jpg').default%>" class="lightbox photo-galerie__item"
                         data-group="cafe">
-                        <img src="<%=require('./images/photo1.jpg').default%>" alt="I am a caption"
-                            class="photo-galerie__image">
+                        <img src="<%=require('./images/photo1.jpg').default%>" alt="Кафе" class="photo-galerie__image">
                     </a>
 
                     <a href="<%=require('./images/photo2.jpg').default%>" class="lightbox photo-galerie__item"
                         data-group="cafe">
-                        <img src="<%=require('./images/photo2.jpg').default%>" alt="I am a caption"
-                            class="photo-galerie__image">
+                        <img src="<%=require('./images/photo2.jpg').default%>" alt="Кухня" class="photo-galerie__image">
                     </a>
 
                     <a href="<%=require('./images/photo3.jpg').default%>" class="lightbox photo-galerie__item"
                         data-group="cafe">
-                        <img src="<%=require('./images/photo3.jpg').default%>" alt="I am a caption"
+                        <img src="<%=require('./images/photo3.jpg').default%>" alt="Сервировка столов"
                             class="photo-galerie__image">
                     </a>
                     <a href="<%=require('./images/photo4.jpg').default%>" class="lightbox photo-galerie__item"
                         data-group="cafe">
-                        <img src="<%=require('./images/photo4.jpg').default%>" alt="I am a caption"
-                            class="photo-galerie__image">
+                        <img src="<%=require('./images/photo4.jpg').default%>" alt="Бар" class="photo-galerie__image">
                     </a>
-
-
-
                 </section>
                 <section class="contacts section" id="contacts">
                     <h2 class="title title_size_medium">Контакты</h2>
                     <p class="subtitle subtitle_padding-top_big">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Duis at velit
                         maximus, molestie est a, tempor magna.</p>
-                    <form action="" class="contacts__form">
-                        <fieldset class="form-fieldset">
-                            <div class="contacts__inputs">
-                                <input type="text" class="contacts__input form-input text" placeholder="Имя">
-                                <input type="email" class="contacts__input form-input text" placeholder="Email">
-                                <input type="tel" class="contacts__input form-input text" placeholder="Телефон">
+                    <form action="http://httpbin.org/post" class="contacts__form form" id="contacts-form">
+                        <div class="contacts__inputs">
+                            <input name="name" type="text" class="contacts__input form__input text" placeholder="Имя"
+                                required minlength="2">
+                            <input name="email" type="email" class="contacts__input form__input text"
+                                placeholder="Email" required>
+                            <div class="form__field contacts__input">
+                                <input name="tel" type="tel" class="form__input form-input-tel text"
+                                    placeholder="Телефон" required pattern="(\+7|8)[\s0-9()-]+" minlength="10">
+                                <span class="form__input-error text">Введите телефон в формате: +7 (900)
+                                    000-00-00</span>
                             </div>
-                        </fieldset>
-                        <textarea placeholder="Сообщение" class="form-input contacts__textarea text"></textarea>
+                        </div>
+                        <textarea name="message" placeholder="Сообщение" class="form__input contacts__textarea text"
+                            required></textarea>
                         <div class="contacts__submit-row">
                             <div class="contacts__info">
                                 <p class="text contacts__info-item contacts__info-adress">Москва</p>
-                                <p class="text contacts__info-item contacts__info-tel">+7 333 3333 3333</p>
-                                <p class="text contacts__info-item contacts__info-email">office@burgerhouse.com</p>
+                                <a href="tel:+7 333 3333 3333"
+                                    class="text contacts__info-item contacts__info-tel link">+7 333 3333 3333</a>
+                                <a href="mailto:office@burgerhouse.com"
+                                    class="text contacts__info-item contacts__info-email link">office@burgerhouse.com</a>
                             </div>
                             <button type="submit" class="contacts__button button button_theme_sun text">Отправить
                                 сообщение</button>
                         </div>
-
                     </form>
+                    <p class="form__error text" id="error-contacts-form">Во время отправки данных произошла ошибка,
+                        попробуйте ещё раз!</p>
+                    <div class="form__message" id="message-contacts-form">
+                        <p class="text form__message-text">Ваше обращение отправлено! В ближайщее время мы с вами
+                            свяжемся!</p>
+                    </div>
                 </section>
                 <section class="map">
                     <iframe class="map__fragment"

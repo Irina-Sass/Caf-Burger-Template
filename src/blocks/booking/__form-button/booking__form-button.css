@@ -1,7 +1,7 @@
 .booking__form-button {
   border: none;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .booking__form-button:focus {
@@ -11,6 +11,6 @@
 @media (max-width: 465px) {
   .booking__form-button {
     width: 90%;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
   }
 }
