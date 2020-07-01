@@ -9,6 +9,7 @@
     width: 60px;
     height: 60px;
     padding: 10px 0 10px 80px;
+    order: -1;
   }
 }
 

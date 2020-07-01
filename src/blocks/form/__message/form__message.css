@@ -1,0 +1,12 @@
+.form__message {
+  display: none;
+  align-items: center;
+  width: calc(100% - 30px);
+  height: 270px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  color: #878787;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 20px auto 0;
+}

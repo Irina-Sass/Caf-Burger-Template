@@ -10,7 +10,6 @@
 @import url(blocks/section-title/section-title.css);
 @import url(blocks/section-background/section-background.css);
 @import url(blocks/nav/nav.css);
-@import url(blocks/nav-mobile/nav-mobile.css);
 @import url(blocks/header/header.css);
 @import url(blocks/menu-row/menu-row.css);
 @import url(blocks/link/link.css);
@@ -18,8 +17,7 @@
 @import url(blocks/lead/lead.css);
 @import url(blocks/subtitle/subtitle.css);
 @import url(blocks/button/button.css);
-@import url(blocks/form-input/form-input.css);
-@import url(blocks/form-fieldset/form-fieldset.css);
+@import url(blocks/form/form.css);
 @import url(blocks/about/about.css);
 @import url(blocks/section-image/section-image.css);
 @import url(blocks/section-inner-image/section-inner-image.css);
