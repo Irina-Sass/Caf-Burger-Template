@@ -1,3 +1,7 @@
 .button_theme_sun {
   background-color: #e8c300;
 }
+
+.button_theme_sun:hover {
+  background-color: #eccb1b;
+}

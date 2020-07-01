@@ -17,7 +17,6 @@
 @media (max-width: 1070px) {
   .menu-row {
     flex-direction: column;
-    padding-top: 25px;
     display: none;
     width: 100%;
     justify-content: flex-end;
@@ -25,7 +24,23 @@
     border-bottom: none;
   }
 
+  .menu-row:first-of-type {
+    padding-top: 25px;
+  }
+
   .nav__toggle:checked ~ .menu-row {
     display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .menu-row {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu-row {
+    padding-left: 16px;
   }
 }
