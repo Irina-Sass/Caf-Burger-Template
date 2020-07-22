@@ -1,4 +1,5 @@
 @import url(__item/menu-row__item.css);
+@import url(__link/menu-row__link.css);
 
 .menu-row {
   font-family: 'Open Sans', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;

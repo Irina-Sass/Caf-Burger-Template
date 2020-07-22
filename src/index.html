@@ -17,25 +17,30 @@
                     <input type="checkbox" id="toggle" class="nav__toggle">
                     <label for="toggle" class="nav__button"><span class="nav__button-icon"></span></label>
                     <ul class="menu-row">
-                        <li class="menu-row__item"><a href="/" target="_self" class="link">Главная</a>
+                        <li class="menu-row__item"><a href="/" target="_self" class="link menu-row__link">Главная</a>
                         </li>
-                        <li class="menu-row__item"><a href="#about" target="_self" class="link">О
+                        <li class="menu-row__item"><a href="#about" target="_self" class="link menu-row__link">О
                                 нас</a>
                         </li>
-                        <li class="menu-row__item"><a href="#team" target="_self" class="link">Команда</a>
+                        <li class="menu-row__item"><a href="#team" target="_self"
+                                class="link menu-row__link">Команда</a>
                         </li>
-                        <li class="menu-row__item"><a href="#booking" target="_self" class="link">Бронирование</a>
+                        <li class="menu-row__item"><a href="#booking" target="_self"
+                                class="link menu-row__link">Бронирование</a>
                         </li>
                     </ul>
                     <img src="<%=require('./images/logo.png').default%>" alt="Логотип" class="header__logo">
                     <ul class="menu-row">
-                        <li class="menu-row__item"><a href="#menu" target="_self" class="link">Меню</a>
+                        <li class="menu-row__item"><a href="#menu" target="_self" class="link menu-row__link">Меню</a>
                         </li>
-                        <li class="menu-row__item"><a href="#galerie" target="_self" class="link">Галерея</a>
+                        <li class="menu-row__item"><a href="#galerie" target="_self"
+                                class="link menu-row__link">Галерея</a>
                         </li>
-                        <li class="menu-row__item"><a href="#events" target="_self" class="link">События</a>
+                        <li class="menu-row__item"><a href="#events" target="_self"
+                                class="link menu-row__link">События</a>
                         </li>
-                        <li class="menu-row__item"><a href="#contacts" target="_self" class="link">Контакты</a>
+                        <li class="menu-row__item"><a href="#contacts" target="_self"
+                                class="link menu-row__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -99,7 +104,7 @@
                 <section class="booking section" id="booking">
                     <div class="section__content booking__section-content">
                         <h2 class="title title_size_medium">Забронировать столик</h2>
-                        <form action="http://httpbin.org/post" class="booking__form form" id="booking-form">
+                        <form action="https://httpbin.org/post" class="booking__form form" id="booking-form">
                             <div class="booking__form-inputs">
                                 <input type="text" class="form__input booking__input text" name="name" placeholder="Имя"
                                     required minlength="2">
@@ -1464,7 +1469,7 @@
                     <p class="subtitle subtitle_padding-top_big">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Duis at velit
                         maximus, molestie est a, tempor magna.</p>
-                    <form action="http://httpbin.org/post" class="contacts__form form" id="contacts-form">
+                    <form action="https://httpbin.org/post" class="contacts__form form" id="contacts-form">                    
                         <div class="contacts__inputs">
                             <input name="name" type="text" class="contacts__input form__input text" placeholder="Имя"
                                 required minlength="2">
