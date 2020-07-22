@@ -29,6 +29,10 @@
     padding-top: 25px;
   }
 
+  .menu-row:last-of-type {
+    padding-bottom: 25px;
+  }
+
   .nav__toggle:checked ~ .menu-row {
     display: block;
   }

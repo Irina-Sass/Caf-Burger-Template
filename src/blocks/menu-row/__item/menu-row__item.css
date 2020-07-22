@@ -1,9 +1,13 @@
+.menu-row__item {
+  width: 50%;
+}
+
 .menu-row__item:hover {
   opacity: 0.8;
 }
 
 @media (max-width: 1070px) {
-  .menu-row__item {
-    padding-bottom: 10px;
+  .menu-row__item :hover {
+    background-color: #4e4e4e;
   }
 }
