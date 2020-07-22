@@ -4,6 +4,7 @@ import Tobii from 'tobii';
 import { formatDateFull } from './js/utils.js';
 import { Api } from './js/Api.js';
 import { Form } from './js/Form.js';
+import { Scroll } from './js/Scroll.js';
 
 var specialtiesSwiper = new Swiper('.swiper-container', {
   pagination: {
@@ -63,3 +64,6 @@ const bookingForm = new Form(bookingFormElem, submitForm);
 const contactsForm = new Form(contactsFormElem, submitForm);
 
 date.setAttribute('min', formatDateFull());
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+const scroll = new Scroll(smoothLinks);
