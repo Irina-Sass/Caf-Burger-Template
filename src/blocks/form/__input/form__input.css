@@ -17,6 +17,7 @@
 
 .form__input:focus {
   outline-color: #e8c300;
+  border-radius: 5px;
 }
 
 .form__input:invalid:not(:placeholder-shown) {

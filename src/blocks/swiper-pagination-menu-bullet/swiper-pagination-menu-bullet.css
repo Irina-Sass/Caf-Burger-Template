@@ -11,3 +11,7 @@
 .swiper-pagination-menu-bullet:last-of-type {
   border-right: none;
 }
+
+.swiper-pagination-menu-bullet:focus {
+  outline: none;
+}

@@ -2,3 +2,9 @@
   display: block;
   height: 100%;
 }
+
+@media (max-width: 1070px) {
+  .menu-row__link {
+    padding: 15px 20px;
+  }
+}
