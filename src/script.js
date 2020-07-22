@@ -64,6 +64,5 @@ const bookingForm = new Form(bookingFormElem, submitForm);
 const contactsForm = new Form(contactsFormElem, submitForm);
 
 date.setAttribute('min', formatDateFull());
-
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 const scroll = new Scroll(smoothLinks);
