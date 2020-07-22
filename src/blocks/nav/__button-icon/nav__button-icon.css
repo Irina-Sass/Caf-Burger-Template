@@ -1,4 +1,4 @@
-.nav__button-icon,
+/* .nav__button-icon,
 .nav__button-icon::before,
 .nav__button-icon::after {
   display: block;
@@ -32,4 +32,40 @@
 .nav__toggle:checked ~ .nav__button > .nav__button-icon::after {
   top: 0;
   transform: rotate(90deg);
+} */
+
+.nav__button-icon,
+.nav__button-icon::before,
+.nav__button-icon::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #828282;
+  position: absolute;
+  transition: transform 0.6s, opacity 0.3s;
+}
+
+.nav__button-icon::before,
+.nav__button-icon::after {
+  content: '';
+}
+.nav__button-icon::before {
+  top: 16px;
+}
+
+.nav__button-icon::after {
+  top: 8px;
+}
+
+.nav__toggle:checked ~ .nav__button > .nav__button-icon {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.nav__toggle:checked ~ .nav__button > .nav__button-icon::before {
+  transform: translateY(-16px) rotate(-90deg);
+}
+
+.nav__toggle:checked ~ .nav__button > .nav__button-icon::after {
+  transform: translateX(-9px) rotate(-45deg);
+  opacity: 0;
 }
